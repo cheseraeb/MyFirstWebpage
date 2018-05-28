@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    margin: 0;
+    background-color: rgba(255, 196, 86, 0.384)
+}
+#wrapper{
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 143, 0.418)
+}
+#main_navigation{
+    background-color: rgb(255, 115, 0);
+    padding: 10px;
+}
+#main_navigation ul{
+    text-align: right;
+    list-style-type: none;
+    margin-right: 10px;
+     
+}
