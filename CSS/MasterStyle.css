@@ -1,3 +1,8 @@
+/* ********************************************************************
+*   Author : Cheserae Bidgood(Beukes)
+*   Date : 28/05/2018   
+*
+**********************************************************************/
 body{
     font-family: Arial, Helvetica, sans-serif;
     font: bold;
@@ -80,6 +85,6 @@ body{
     border: 2px solid black;
 }
 #footer_banner img{
-    height: 200px;
+    height: 300px;
     width: 100%;
 }
