@@ -27,12 +27,12 @@ var myArrayVariable_1;
 myBooleanVariable_1 = true;
 myNumberVariable_1 = 10;
 
-if (myBooleanVariable_3){
+if (myBooleanVariable_1){
     document.write("CHEEEEEEEEEEEEZZZZZZZZZZZZZZEEEEEEEEEE!!!!!!!!!!!");
 } else{
     document.write("Hello Motto!!")
 }
-if (myNumberVariable_2 > 9){
+if (myNumberVariable_1 > 9){
     document.write("Hellow Cheeze!!!");
 } else{
     document.write("leave me alone")
@@ -40,7 +40,7 @@ if (myNumberVariable_2 > 9){
 
 myBooleanVariable_2 = false;
 
-if (myBooleanVariable_2){
+if (!(myBooleanVariable_2)){
     document.write("Hellow me");
 
 } else if (myBooleanVariable_1){
@@ -50,9 +50,39 @@ if (myBooleanVariable_2){
     document.write("Hello US!!!!");
 
 }
+// Logical operators
+if (myBooleanVariable_1 && /*stands for AND*/ myBooleanVariable_2){
+    document.write("Hellow cheeze!!");
+} else{
+    document.write("Get Lost")
+}
 
+if (myBooleanVariable_1 || /*stands for or*/ myBooleanVariable_2){
+    document.write("Hellow cheeze!!");
+} else{
+    document.write("Get Lost");
+}
+// Loops !!!!!!!!!!!!!**********************************************
+// While Loop
+while (myNumberVariable_1 < 20){
+    console.log("what the hell 1");
+    myNumberVariable_1++ ;
+}
+document.write("ello");
+// For Loops
 
+for (myNumberVariable_1 = 1; myNumberVariable_1 <= 20; myNumberVariable_1++)
+{
+    console.log("what the hell");
+}
+document.write("ello");
 
+var links = document.getElementsByTagName("a");
 
-
-
+for (index = 1; index < links.length; index++ ) {
+    console.log(
+        "This is link number " + index
+    ) ;
+    
+}
+document.write(" You have " + index + " Links on your page");
