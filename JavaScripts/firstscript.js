@@ -116,7 +116,7 @@ function getAvarage(a,b){
     console.log(avarage);
     return avarage;
 }
-
+myfirstJS();
 // Working with numbers
 var avarage_result = getAvarage(9,18); /*global variable*/
 
@@ -161,4 +161,39 @@ function strings(){
 
 strings();
 // Split & Slicing Strings
+function SliceString9(){
+    // Slice
+    var string = "hello, world";
+    var string2 = string.slice(2, 9);
+    var string3 = string.slice(2);
+    console.log(string);
+    console.log(string2);
+    console.log(string3);
+    // Split
+    var tags = "meat,ham,salami,pork,beaf,chicken";
+    var tags_array = tags.split(",");
+    console.log(tags);
+    console.log(tags_array);
+}
+
+SliceString9();
+// Arrays
+function Arrays(){
+    var Arrays = [] ;
+    Arrays[0] = 25;
+    Arrays[1] = "hellow";
+    Arrays[2] = true;
+    Arrays[3] = 44;
+    Arrays[4] = "Cheeze is KING";
+    Arrays[5] = false;
+    Arrays[6] = 10;
+    Arrays[7] = 'Cheeze is "NOT" a "KING"!!';
+    console.log(Arrays);
+    var Arrays2 =[20,30,"HI",false];
+    console.log(Arrays2);
+    var Arrays3 = new Array(5);
+    console.log(Arrays.sort());
+
+}
+Arrays();
 
