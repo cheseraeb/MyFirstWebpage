@@ -117,6 +117,7 @@ function getAvarage(a,b){
     return avarage;
 }
 
+// Working with numbers
 var avarage_result = getAvarage(9,18); /*global variable*/
 
 console.log(avarage_result);
@@ -133,7 +134,31 @@ avarage_result = Math.round(avarage_result);/*this will round it and change it b
 console.log(avarage_result);
 console.log(typeof(avarage_result));
 
+// NaN - Not a number
 
+function checkNaN(){
+    var a = 6;
+    var b = 6;
 
-// Working with numbers
+    if(isNaN(a)){
+        console.log("NOT A BLADY NUMBER!!!!")     
+    } else{
+        console.log(a * b);
+    }
+}
+checkNaN();
+// Strings
+function strings(){
+    var string = "I am a string";
+    var string2 = 'I\'m a "fun" string';
+
+    console.log(string2);
+    console.log(string2.length);
+    console.log(string2.toUpperCase(string2));
+    console.log(string2.toLowerCase(string2));
+    console.log(string2.indexOf("fun"));
+}
+
+strings();
+// Split & Slicing Strings
 
