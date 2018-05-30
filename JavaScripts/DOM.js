@@ -4,5 +4,10 @@
 // *********************************************************
 function DOM(){
     var price_class = document.getElementsByClassName("cheese_info");
-    var price_change = document.getElementsByTagName("");
+    console.log(price_class);
+    var price_change = document.getElementsByTagName("span");
+    console.log(price_change);
+    price_change[4].innerHTML = "WAY TOO EXPENSIVE MAN!!!!!!";
 }
+
+//  DOM();

@@ -63,6 +63,7 @@ body{
 .cheese_info span{
     display: block;
     font-size: 58px;
+    cursor: pointer;
 }
 .cheese_info a{
     display: block;
