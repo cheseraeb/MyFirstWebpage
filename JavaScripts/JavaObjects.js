@@ -111,3 +111,6 @@ if(birthday.getTime() == birthday2.getTime()){
 }else{
     console.log("Birthdays are not equal");
 }
+// Document object model (DOM)
+// This is the interaction model with HTMl. all of the above had to do with the console
+// its refered to as "application programming interface"
