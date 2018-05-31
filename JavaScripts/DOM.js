@@ -34,18 +34,48 @@ function DOMchange4() {
 };
 
 function DOMchange5() {
-    Reset_all();
+    Reset_all2();
     console.log(price_class);
     console.log(price_change);
     price_change[4].innerHTML = "WAY TOO EXPENSIVE MAN!!!!!!";
 };
 
-
-// Methods/ properties
+// properties
+// innerhtml will change the whole html
+function Reset_Page(){
+    var page = document.getElementsByTagName("body");
+    page[0].innerHTML = '<h1 style="font-size: 20vw">YOU ARE NOW BROKE!!!!</h1>';
+    change_style();
+}
+// Below will change only the text
 function Reset_all(){
-    price_change[0].innerHTML = "R50.00";
-    price_change[1].innerHTML = "R60.00";
-    price_change[2].innerHTML = "R70.00";
-    price_change[3].innerHTML = "R80.00";
-    price_change[4].innerHTML = "R90.00";
+    price_change[0].innerText = "R50.00";
+    price_change[1].innerText = "R60.00";
+    price_change[2].innerText = "R70.00";
+    price_change[3].innerText = "R80.00";
+    price_change[4].innerText = "R90.00";
+}
+// Below is another specified way of changing text
+function Reset_all2(){
+    price_change[0].textContent = "R50.00";
+    price_change[1].textContent = "R60.00";
+    price_change[2].textContent = "R70.00";
+    price_change[3].textContent = "R80.00";
+    price_change[4].textContent = "R90.00";
+}
+// Accessing and changing attributes
+function change_Attribute(){
+    var link = document.getElementById("add");
+    console.log(link.getAttribute("href"));
+    link.setAttribute("class", "pie");
+    link.setAttribute("alt", "hello");
+    console.log(link.getAttribute("alt"));
+    
+}
+// change styles
+function change_style(){
+    var change_style1 = document.getElementsByTagName("body");
+    console.log(change_style1);
+    change_style1[0].setAttribute("style", " background-color: red");
+    
 }
