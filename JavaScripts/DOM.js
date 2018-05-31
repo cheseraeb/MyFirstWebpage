@@ -40,6 +40,8 @@ function DOMchange5() {
     price_change[4].innerHTML = "WAY TOO EXPENSIVE MAN!!!!!!";
 };
 
+
+// Methods/ properties
 function Reset_all(){
     price_change[0].innerHTML = "R50.00";
     price_change[1].innerHTML = "R60.00";
@@ -47,4 +49,3 @@ function Reset_all(){
     price_change[3].innerHTML = "R80.00";
     price_change[4].innerHTML = "R90.00";
 }
-//  DOM();
