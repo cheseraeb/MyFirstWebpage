@@ -6,39 +6,53 @@ var price_class = document.getElementsByClassName("cheese_info");
 var price_change = document.getElementsByTagName("span");
 
 function DOMchange1() {
-    Reset_all();
+    // Reset_all();
     console.log(price_class);
     console.log(price_change);
     price_change[0].innerHTML = "You are too cheap, try again";
+    addPrice1();
 };
 
 function DOMchange2() {
-    Reset_all();
+    // Reset_all();
     console.log(price_class);
     console.log(price_change);
-    price_change[1].innerHTML = "Not there yet, keep going";
+    price_change[1].innerHTML = "You can do better then that?";
+    addPrice2();
 };
 
 function DOMchange3() {
-    Reset_all();
+    // Reset_all();
     console.log(price_class);
     console.log(price_change);
-    price_change[2].innerHTML = "Almost, Almost there man";
+    price_change[2].innerHTML = "Keep going, you are almost there";
+    addPrice3();
 };
 
 function DOMchange4() {
-    Reset_all();
+    // Reset_all();
     console.log(price_class);
     console.log(price_change);
-    price_change[3].innerHTML = "THERE you go thats the perfect price";
+    price_change[3].innerHTML = "Almost.....AMOST! 1 more";
+    addPrice4();
 };
 
 function DOMchange5() {
-    Reset_all2();
+    // Reset_all2();
     console.log(price_class);
     console.log(price_change);
-    price_change[4].innerHTML = "WAY TOO EXPENSIVE MAN!!!!!!";
+    price_change[4].innerHTML = "THERE you go thats the perfect price";
+    addPrice6();
 };
+function DOMchange6() {
+    // Reset_all2();
+    console.log(price_class);
+    console.log(price_change);
+    // price_change[6].innerHTML = '<br> alert("ARE YOU FREE OR ARE YOU DOOOOOOMMM!!!")';
+    alert("ARE YOU FREE...OR ARE YOU DOOOOOOOOMMM!!!!!!");
+    addPrice5();
+};
+
 
 // properties
 // innerhtml will change the whole html
@@ -79,3 +93,72 @@ function change_style(){
     change_style1[0].setAttribute("style", " background-color: red");
     
 }
+// Adding more elements
+function addPrice1(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="R60.00";
+    newPrice.setAttribute("onclick", "DOMchange2()") 
+}
+function addPrice2(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="R70.00";
+    newPrice.setAttribute("onclick", "DOMchange3()") 
+}
+function addPrice3(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="R80.00";
+    newPrice.setAttribute("onclick", "DOMchange4()") 
+}
+function addPrice4(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="R90.00";
+    newPrice.setAttribute("onclick", "DOMchange5()") 
+}
+function addPrice5(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="Super Duper Secret Special Price";
+    newPrice.setAttribute("onclick", "Reset_Page()") 
+}
+function addPrice6(){
+    var newPrice = document.createElement("span");/*define the newtag/element*/
+    var priceSection = document.getElementById("cheese_info")
+    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    will hold multiple elemets and specify the first element or any other element number
+    you wish to target*/
+
+    priceSection.appendChild(newPrice);
+    newPrice.innerHTML ="<br> Forget all of the above," +
+     " click here if you want it free";
+    newPrice.setAttribute("onclick", "DOMchange6()") 
+}
+

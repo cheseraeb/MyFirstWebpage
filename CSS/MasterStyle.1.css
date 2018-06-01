@@ -51,7 +51,7 @@ body{
     border: 2px solid black;
     
 }
-.cheese_info{
+#cheese_info{
     margin: 30px 0;
     text-align: center;
 }
@@ -60,12 +60,12 @@ body{
     font-size: 50px;
     margin-bottom: 0;
 }
-.cheese_info span{
+#cheese_info span{
     display: block;
     font-size: 58px;
     cursor: pointer;
 }
-.cheese_info a{
+#cheese_info a{
     display: block;
     text-transform: uppercase;
     font-size: 15px;
@@ -78,7 +78,7 @@ body{
     border-radius: 10px
 
 }
-.cheese_info a:hover{
+#cheese_info a:hover{
     color: white;
     background-color: orangered;
 }
