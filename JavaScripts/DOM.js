@@ -33,7 +33,7 @@ function DOMchange4() {
     // Reset_all();
     console.log(price_class);
     console.log(price_change);
-    price_change[3].innerHTML = "Almost.....AMOST! 1 more";
+    price_change[3].innerHTML = "Almost.....ALMOST! 1 more";
     addPrice4();
 };
 
@@ -42,7 +42,7 @@ function DOMchange5() {
     console.log(price_class);
     console.log(price_change);
     price_change[4].innerHTML = "THERE you go thats the perfect price";
-    addPrice6();
+    setTimeout(function(){addPrice6()}, 2000) ;
 };
 function DOMchange6() {
     // Reset_all2();
@@ -150,15 +150,18 @@ function addPrice5(){
     newPrice.setAttribute("onclick", "Reset_Page()") 
 }
 function addPrice6(){
+    
     var newPrice = document.createElement("span");/*define the newtag/element*/
-    var priceSection = document.getElementById("cheese_info")
-    .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
+    // var priceSection = document.getElementById("cheese_info")
+    var priceSection = document.getElementsByTagName("div")[3];/*define parent via ID then the child via a tag which 
     will hold multiple elemets and specify the first element or any other element number
     you wish to target*/
-
-    priceSection.appendChild(newPrice);
-    newPrice.innerHTML ="<br> Forget all of the above," +
-     " click here if you want it free";
-    newPrice.setAttribute("onclick", "DOMchange6()") 
+    console.log(priceSection);
+    priceSection.innerHTML = '<span onclick="DOMchange6()">Forget all of the above,'+
+    ' click here if you want it free</span>' ;
+    // priceSection.appendChild(newPrice);
+    // newPrice.innerHTML ="<br> Forget all of the above," +
+    //  " click here if you want it free";
+    // priceSection.setAttribute("onclick", "DOMchange6()") 
 }
 
