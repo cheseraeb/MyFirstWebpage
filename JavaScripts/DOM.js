@@ -2,7 +2,6 @@
 // Author : Cheserae Bidgood(Beukes)
 //    Date : 30/05/2018  
 // *********************************************************
-var price_class = document.getElementsByClassName("cheese_info");
 // var price_change = document.getElementsByTagName("span");
 var priceSection = document.getElementById("cheese_info")
 .getElementsByTagName("div")[0];/*define parent via ID then the child via a tag which 
@@ -211,7 +210,7 @@ window.onload = function(){
 }
 // Java Timer
 var content_show = document.getElementById("content").getElementsByTagName("p");
-
+// Show content
 function show_story(){
     for (index = 0; index < content_show.length; index++) {
         content_show[index].className = "show";
@@ -224,3 +223,39 @@ function show_story_complete(){
 }
 // set time out
 setTimeout(show_story_complete, 3000);
+// intervals
+var color_change = document.getElementById("color").getElementsByTagName("a");
+var colors = ["red", "blue", "green", "yellow", "purple"];
+var colorcounter = 0;
+console.log(color_change);
+function change_color_classname(){
+        color_change[0].className = "color";
+        color_change[1].className = "color";
+        color_change[2].className = "color";
+
+}
+function change_color(){
+    if (colorcounter >= colors.length){
+        colorcounter = 0;
+    }
+    setTimeout(delay_colorChange(0), 1300);
+    setTimeout(delay_colorChange(1), 8000);
+    // setTimeout(delay_colorChange(2), 1300);
+
+    // for (index = 0; index < color_change; index++) {
+    //     setTimeout(delay_colorChange(0), 300);
+    // }
+
+    colorcounter++;
+}
+function delay_colorChange(index){
+
+        color_change[index].style.background = colors[colorcounter];
+ 
+}
+function do_AllInOneColor(){
+    change_color_classname();
+    setInterval(change_color, 1000);
+}
+
+do_AllInOneColor();
