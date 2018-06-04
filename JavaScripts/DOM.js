@@ -209,3 +209,18 @@ function onclick_seeMore() {
 window.onload = function(){
     onclick_seeMore();
 }
+// Java Timer
+var content_show = document.getElementById("content").getElementsByTagName("p");
+
+function show_story(){
+    for (index = 0; index < content_show.length; index++) {
+        content_show[index].className = "show";
+    }
+}
+
+function show_story_complete(){
+    show_story();
+
+}
+// set time out
+setTimeout(show_story_complete, 3000);

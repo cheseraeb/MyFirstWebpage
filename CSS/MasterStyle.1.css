@@ -102,16 +102,28 @@ body{
     margin: 0 auto;
     max-height: 270px;
     overflow: hidden;
+
     -webkit-transition: max-height 1.7s;
     -moz-transition: max-height 1.7s;
     transition: max-height 1.7s;
 }
 #content p{
     font-size: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1.7s;
+    -moz-transition: opacity 1.7s;
+    transition: opacity 1.7s;
 }
 #content.open{
     max-height: 1000px;
     -webkit-transition: max-height 1.7s;
     -moz-transition: max-height 1.7s;
     transition: max-height 1.7s;
+}
+#content p.show{
+    opacity: 1;
+    -webkit-transition: opacity 1.7s;
+    -moz-transition: opacity 1.7s;
+    transition: opacity 1.7s;
+    
 }
