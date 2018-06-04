@@ -227,6 +227,8 @@ setTimeout(show_story_complete, 3000);
 var color_change = document.getElementById("color").getElementsByTagName("a");
 var colors = ["red", "blue", "green", "yellow", "purple"];
 var colorcounter = 0;
+var colorcounter2 = 0;
+var colorcounter3 = 0;
 console.log(color_change);
 function change_color_classname(){
         color_change[0].className = "color";
@@ -238,8 +240,7 @@ function change_color(){
     if (colorcounter >= colors.length){
         colorcounter = 0;
     }
-    setTimeout(delay_colorChange(0), 1300);
-    setTimeout(delay_colorChange(1), 8000);
+    delay_colorChange(0);
     // setTimeout(delay_colorChange(2), 1300);
 
     // for (index = 0; index < color_change; index++) {
@@ -247,6 +248,32 @@ function change_color(){
     // }
 
     colorcounter++;
+}
+function change_color2(){
+    if (colorcounter2 >= colors.length){
+        colorcounter2 = 0;
+    }
+    delay_colorChange(1);
+    // setTimeout(delay_colorChange(2), 1300);
+
+    // for (index = 0; index < color_change; index++) {
+    //     setTimeout(delay_colorChange(0), 300);
+    // }
+
+    colorcounter2++;
+}
+function change_color3(){
+    if (colorcounter3 >= colors.length){
+        colorcounter3 = 0;
+    }
+    delay_colorChange(2);
+    // setTimeout(delay_colorChange(2), 1300);
+
+    // for (index = 0; index < color_change; index++) {
+    //     setTimeout(delay_colorChange(0), 300);
+    // }
+
+    colorcounter3++;
 }
 function delay_colorChange(index){
 
@@ -259,3 +286,15 @@ function do_AllInOneColor(){
 }
 
 do_AllInOneColor();
+function do_AllInOneColor2(){
+    change_color_classname();
+    setInterval(change_color2, 1500);
+}
+
+do_AllInOneColor2();
+function do_AllInOneColor3(){
+    change_color_classname();
+    setInterval(change_color3, 2000);
+}
+
+do_AllInOneColor3();
