@@ -147,7 +147,9 @@ function addPrice5(){
 
     priceSection.appendChild(newPrice);
     newPrice.innerHTML ="Super Duper Secret Special Price";
+    priceSection.insertBefore(newPrice, priceSection.getElementsByTagName("span")[0])
     newPrice.setAttribute("onclick", "Reset_Page()") 
+    remove_Element();
 }
 function addPrice6(){
     
@@ -164,4 +166,15 @@ function addPrice6(){
     //  " click here if you want it free";
     // priceSection.setAttribute("onclick", "DOMchange6()") 
 }
+// Removing elements
+function remove_Element() {
+    var parent_nav = document.getElementById("wrapper")
+    .getElementsByTagName("ul")[0];
+
+    var child_nav = parent_nav.getElementsByTagName("li")[2];
+    parent_nav.removeChild(child_nav);
+}
+// Java script events
+
+
 
