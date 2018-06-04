@@ -180,5 +180,32 @@ function change_navigation(index){
 change_navigation(0);
 // more definite and in depth events
 function onclick_event(){
+    var check_event = document.getElementById("wrapper").getElementsByTagName("a");
+
+    check_event[0].onclick = function(){
+        alert("YOU FOUND ME!!!!")
+    };
+}
+onclick_event();
+
+function onclick_seeMore() {
+    var content = document.getElementById("content");
+    var showMore = document.getElementById("more");
     
+    showMore.onclick = function () {
+        if(content.className == "open"){
+            // Shrink box text
+            content.className = "";
+            showMore.innerHTML = "show more";
+        }  else {
+            // expand box
+            content.className = "open";
+            showMore.innerHTML = "show less";
+        }
+    };
+}
+// below is a window event it will load the html full then run what ever 
+// you have coded in the functions
+window.onload = function(){
+    onclick_seeMore();
 }
