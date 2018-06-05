@@ -132,3 +132,20 @@ body{
     -moz-transition: background 0.7s;
     transition: background 0.7s;
 }
+#submission_form {
+    display: block;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+}
+#submission_form input{
+    font-size: 100%;
+}
+#submission_form input.name{
+    margin: 0 auto;
+    display: block;
+}
+legend {
+    font-size: 125%;
+    text-decoration-line: underline;
+}

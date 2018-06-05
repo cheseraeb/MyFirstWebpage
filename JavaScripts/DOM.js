@@ -229,7 +229,7 @@ var colors = ["red", "blue", "green", "yellow", "purple"];
 var colorcounter = 0;
 var colorcounter2 = 0;
 var colorcounter3 = 0;
-console.log(color_change);
+
 function change_color_classname(){
         color_change[0].className = "color";
         color_change[1].className = "color";
@@ -241,11 +241,6 @@ function change_color(){
         colorcounter = 0;
     }
     delay_colorChange(0);
-    // setTimeout(delay_colorChange(2), 1300);
-
-    // for (index = 0; index < color_change; index++) {
-    //     setTimeout(delay_colorChange(0), 300);
-    // }
 
     colorcounter++;
 }
@@ -254,11 +249,6 @@ function change_color2(){
         colorcounter2 = 0;
     }
     delay_colorChange(1);
-    // setTimeout(delay_colorChange(2), 1300);
-
-    // for (index = 0; index < color_change; index++) {
-    //     setTimeout(delay_colorChange(0), 300);
-    // }
 
     colorcounter2++;
 }
@@ -267,11 +257,6 @@ function change_color3(){
         colorcounter3 = 0;
     }
     delay_colorChange(2);
-    // setTimeout(delay_colorChange(2), 1300);
-
-    // for (index = 0; index < color_change; index++) {
-    //     setTimeout(delay_colorChange(0), 300);
-    // }
 
     colorcounter3++;
 }
@@ -280,21 +265,29 @@ function delay_colorChange(index){
         color_change[index].style.background = colors[colorcounter];
  
 }
-function do_AllInOneColor(){
-    change_color_classname();
-    setInterval(change_color, 1000);
+
+
+change_color_classname();
+var colorTimer = setInterval(change_color, 700);
+var colorTimer2 = setInterval(change_color2, 1000);
+var colorTimer3 = setInterval(change_color3, 1700);
+
+color_change[2].onmouseover = function () {
+    clearInterval(colorTimer3);    
+}
+color_change[1].onmouseover = function () {
+    clearInterval(colorTimer2);    
+}
+color_change[0].onmouseover = function () {
+    clearInterval(colorTimer);    
+}
+// Forms in JAVA!!!!
+var personal_details = document.forms.submissionForm;
+
+function focus_firstname(){
+        personal_details.FirstName.style.border = "4px solid black";
+}
+function blur_firstname(){
+    personal_details.FirstName.style.border = "none";
 }
 
-do_AllInOneColor();
-function do_AllInOneColor2(){
-    change_color_classname();
-    setInterval(change_color2, 1500);
-}
-
-do_AllInOneColor2();
-function do_AllInOneColor3(){
-    change_color_classname();
-    setInterval(change_color3, 2000);
-}
-
-do_AllInOneColor3();

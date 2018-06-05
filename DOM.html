@@ -82,6 +82,32 @@
                 <a href="https://www.youtube.com/watch?v=Az5J_EkhYCY&t=7s" target="_blank">
                     Click here to continue your java training</a>
             </div>
+            <form id="submission_form" name="submissionForm">
+                <legend>Personal Information</legend>
+                <h1>Fill out the form below</h1>
+                <!-- First Name: -->
+                <!-- <label for="FirstName">FirstName</label> -->
+                <input type="text" name="FirstName" onfocus="focus_firstname()" onblur="blur_firstname" placeholder="First Name" required>
+                <!-- Last Name: -->
+                <input type="text" name="LastName" placeholder="Last Name" required>
+                <br> Gender:
+                <br>
+                <input type="radio" name="Male" value="Male">Male
+                <br>
+                <input type="radio" name="Female" value="Female">Female
+                <br>
+                <input type="radio" name="Other" value="Other">Other
+                <br>
+                <h1>Do You like?:</h1>
+                <input type="checkbox" name="food" id="food">Good Food
+                <br>
+                <input type="checkbox" name="music" id="music">Good Music
+                <br>
+                <input type="checkbox" name="movies" id="movies">Good Movies
+                <br>
+                <br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
         </section>
         <footer id="footer_banner">
             <img src="Images/Multicheese.jpg" alt="Multiple plavors of cheese">
