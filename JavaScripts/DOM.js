@@ -309,9 +309,16 @@ var message = document.getElementById("warning");
 personal_details.onsubmit = function(){
     if(personal_details.FirstName.value == ""){
         message.innerHTML = "Please enter a Name";
+        return false;
     } else if(personal_details.LastName.value == ""){
         message.innerHTML = "Please enter a Surname";
-    }; 
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
+    } 
 
     
 };
+// Java Libraries
+// study the jQuery
