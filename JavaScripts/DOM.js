@@ -284,10 +284,34 @@ color_change[0].onmouseover = function () {
 // Forms in JAVA!!!!
 var personal_details = document.forms.submissionForm;
 
-function focus_firstname(){
-        personal_details.FirstName.style.border = "4px solid black";
-}
-function blur_firstname(){
+personal_details.FirstName.onblur = function(){
+
     personal_details.FirstName.style.border = "none";
+
+}
+personal_details.FirstName.onfocus = function(){
+
+    personal_details.FirstName.style.border = "4px solid black";
+
 }
 
+personal_details.LastName.onblur = function(){
+
+    personal_details.LastName.style.border = "none";
+
+}
+personal_details.LastName.onfocus = function(){
+
+    personal_details.LastName.style.border = "4px solid black";
+}
+// form validation
+var message = document.getElementById("warning");
+personal_details.onsubmit = function(){
+    if(personal_details.FirstName.value == ""){
+        message.innerHTML = "Please enter a Name";
+    } else if(personal_details.LastName.value == ""){
+        message.innerHTML = "Please enter a Surname";
+    }; 
+
+    
+};

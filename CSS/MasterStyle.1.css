@@ -149,3 +149,7 @@ legend {
     font-size: 125%;
     text-decoration-line: underline;
 }
+#warning{
+    color: red;
+    font-size: 120%;
+}

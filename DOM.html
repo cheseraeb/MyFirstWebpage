@@ -87,9 +87,9 @@
                 <h1>Fill out the form below</h1>
                 <!-- First Name: -->
                 <!-- <label for="FirstName">FirstName</label> -->
-                <input type="text" name="FirstName" onfocus="focus_firstname()" onblur="blur_firstname" placeholder="First Name" required>
+                <input type="text" name="FirstName" placeholder="First Name">
                 <!-- Last Name: -->
-                <input type="text" name="LastName" placeholder="Last Name" required>
+                <input type="text" name="LastName" placeholder="Last Name">
                 <br> Gender:
                 <br>
                 <input type="radio" name="Male" value="Male">Male
@@ -106,7 +106,9 @@
                 <input type="checkbox" name="movies" id="movies">Good Movies
                 <br>
                 <br>
-                <input class="submit" type="submit" value="Submit">
+                <input type="submit" value="Submit" name="submit">
+                <br>
+                <div id="warning"></div>
             </form>
         </section>
         <footer id="footer_banner">
