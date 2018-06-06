@@ -153,7 +153,7 @@ legend {
     color: red;
     font-size: 120%;
 }
-#comments{
+#comments textarea{
     font-size: 110%;
     border-radius: 10px;
     resize: auto;

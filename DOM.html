@@ -118,7 +118,14 @@
             <form id="comments">
                 <h1>Any Comments?: </h1>
                 <br>
-                <textarea name="Comments" id="comments" cols="30" rows="10"></textarea>
+                <textarea name="Comments" id="inputComments" cols="30" rows="10"></textarea>
+                <!-- <input type="text" id="inputComments" name="Comments"> -->
+                <br>
+                <input type="button" value="Add Comment" onclick="input_Comments()">
+                <div id="warning1"></div>
+                <!-- <output name=Comments1 id="outputComments"></output> -->
+                <textarea name="Comments" id="outputComments" cols="30" rows="10"></textarea>
+                <br>
             </form>
         </section>
         <footer id="footer_banner">
@@ -127,8 +134,8 @@
 
     </div>
     <!--Below is a javascrpit library  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script> -->
     <!--  -->
     <script src="JavaScripts/DOM.js"></script>
 </body>

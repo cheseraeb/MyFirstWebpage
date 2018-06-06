@@ -205,9 +205,9 @@ function onclick_seeMore() {
 }
 // below is a window event it will load the html full then run what ever 
 // you have coded in the functions
-window.onload = function(){
-    onclick_seeMore();
-}
+// window.onload = function(){
+//     onclick_seeMore();
+// }
 // Java Timer
 var content_show = document.getElementById("content").getElementsByTagName("p");
 // Show content
@@ -322,3 +322,26 @@ personal_details.onsubmit = function(){
 };
 // Java Libraries
 // study the jQuery
+// ---------------------------------------------------------------------
+// Local storage
+var input_comments = document.getElementById("inputComments");
+var output_comments = document.getElementById("outputComments");
+var warning1 = document.getElementById("warning1");
+function input_Comments(){
+    if (input_comments.value ==""){
+        warning1.innerHTML = "comments cant be blank";
+        return false;
+    } else {
+        warning1.innerHTML = "";
+    }
+    window.localStorage.setItem('text', input_comments.value);
+    output_comments.value = window.localStorage.getItem('text');
+    remove_comment();
+    // console.log(input_comments);
+    // output_comments.innerHTML = window.localStorage.getItem('text');
+};
+
+function remove_comment(){
+   document.getElementById("inputComments").value = '';
+   window.localStorage.removeItem('text');
+}
