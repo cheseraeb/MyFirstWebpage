@@ -153,3 +153,11 @@ legend {
     color: red;
     font-size: 120%;
 }
+#comments{
+    font-size: 110%;
+    border-radius: 10px;
+    resize: auto;
+}
+#comments h1{       
+    font-size: 150%;
+}
