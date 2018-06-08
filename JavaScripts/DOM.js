@@ -325,8 +325,11 @@ personal_details.onsubmit = function(){
 // ---------------------------------------------------------------------
 // Local storage
 var input_comments = document.getElementById("inputComments");
-var output_comments = document.getElementById("outputComments");
+var output_comments = [document.getElementById("outputComments")];
 var warning1 = document.getElementById("warning1");
+var text = [];
+var index = 0;
+console.log(output_comments);
 function input_Comments(){
     if (input_comments.value ==""){
         warning1.innerHTML = "comments cant be blank";
@@ -334,14 +337,20 @@ function input_Comments(){
     } else {
         warning1.innerHTML = "";
     }
-    window.localStorage.setItem('text', input_comments.value);
-    output_comments.value = window.localStorage.getItem('text');
-    remove_comment();
+    for (index = 0; index <= text.length; index++) {
+        text[index] = 'comment' + index;
+        if(window.localStorage.getItem(text[index]) == " "){
+            break;
+        }
+    }
+    window.localStorage.setItem(text[index], input_comments.value);
+    // output_comments[0].value = window.localStorage.getItem(text[0]);
+    // remove_comment(text[0]);
     // console.log(input_comments);
     // output_comments.innerHTML = window.localStorage.getItem('text');
 };
 
-function remove_comment(){
+function remove_comment(text){
    document.getElementById("inputComments").value = '';
-   window.localStorage.removeItem('text');
+   window.localStorage.removeItem(text);
 }
