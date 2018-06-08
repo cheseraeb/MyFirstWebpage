@@ -15,22 +15,22 @@ body{
     background-color: rgba(255, 255, 143, 0.418);
     border: 2px solid black;
 }
-#main_navigation{
+.main_navigation{
     background-color: rgb(255, 115, 0);
     padding: 10px;
     border: 2px solid black;
 }
-#main_navigation ul{
+.main_navigation ul{
     text-align: right;
     list-style-type: none;
     margin-right: 5px; 
      
 }
-#main_navigation li{
+.main_navigation li{
     display: inline-block;
     
 }
-#main_navigation a{
+.main_navigation a{
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -40,7 +40,7 @@ body{
     background-color: rgb(255, 196, 86);
     margin-left: 5px;
 }
-#main_navigation a:hover{
+.main_navigation a:hover{
     text-decoration-line: underline;
     background-color: rgb(255, 255, 0);
     text-decoration-color: black;
@@ -56,15 +56,20 @@ body{
     text-align: center;
 }
 
-#cheese_info h2.product_info{
+#product_info{
     font-size: 50px;
     margin-bottom: 0;
 }
-#cheese_info span.price{
+#cheese_info span{
+    display: block;
+    font-size: 58px;
+    cursor: pointer;
+}
+#cheese_info p{
     display: block;
     font-size: 58px;
 }
-#cheese_info a{
+#cheese_info a, span{
     display: block;
     text-transform: uppercase;
     font-size: 15px;
@@ -77,7 +82,7 @@ body{
     border-radius: 10px
 
 }
-#cheese_info a:hover{
+#cheese_info a:hover, span:hover{
     color: white;
     background-color: orangered;
 }
@@ -87,4 +92,75 @@ body{
 #footer_banner img{
     height: 300px;
     width: 100%;
+}
+#content{
+    background-color: azure;
+    width: 400px;
+    padding: 20px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-height: 270px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 1.7s;
+    -moz-transition: max-height 1.7s;
+    transition: max-height 1.7s;
+}
+#content p{
+    font-size: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 1.7s;
+    -moz-transition: opacity 1.7s;
+    transition: opacity 1.7s;
+}
+#content.open{
+    max-height: 1000px;
+    -webkit-transition: max-height 1.7s;
+    -moz-transition: max-height 1.7s;
+    transition: max-height 1.7s;
+}
+#content p.show{
+    opacity: 1;
+    -webkit-transition: opacity 1.7s;
+    -moz-transition: opacity 1.7s;
+    transition: opacity 1.7s;
+    
+}
+#more{
+    cursor: pointer;
+}
+#cheese_info a.color{
+    -webkit-transition: background 0.7s;
+    -moz-transition: background 0.7s;
+    transition: background 0.7s;
+}
+#submission_form {
+    display: block;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+}
+#submission_form input{
+    font-size: 100%;
+}
+#submission_form input.name{
+    margin: 0 auto;
+    display: block;
+}
+legend {
+    font-size: 125%;
+    text-decoration-line: underline;
+}
+#warning{
+    color: red;
+    font-size: 120%;
+}
+#comments textarea{
+    font-size: 110%;
+    border-radius: 10px;
+    resize: auto;
+}
+#comments h1{       
+    font-size: 150%;
 }
