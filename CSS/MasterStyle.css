@@ -164,3 +164,161 @@ legend {
 #comments h1{       
     font-size: 150%;
 }
+/* media queries */
+/* Tablets */
+@media screen and (max-width : 760px){
+    #wrapper a{
+        font-size: 2em;
+    }
+    #content p{
+        font-size: 2em;
+    }
+    .main_navigation ul{
+        /* font-size: ; */
+        text-align: center;
+        font-size: 125%
+    }
+    .main_navigation li{
+        padding: 10px;
+    }
+    #top_banner img{
+        height: 45%;
+    }
+    #cheese_info h2{
+        font-size: 400%;
+    }
+    #main_product{
+        width: 75%;
+    }
+    #submission_form{
+        font-size: 225%;        
+    }
+    #comments{
+        font-size: 225%;
+    }
+    #comments input{
+        font-size: 175%;
+    }
+    #comments textarea{
+        font-size: 175%;
+    }
+    #content.open{
+        max-height: fit-content;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+    }    
+
+}
+/* mobile */
+@media screen and (max-width : 480px){
+    .cheeze_nav{
+        display: block;
+        height: 40px;        
+        width: 99.6%;
+        background: url(/Images/cheese-32.png) no-repeat 98% center;
+        background-color: yellow;
+        border: 3px solid black;
+        cursor: pointer;
+
+    }
+    .main_navigation{
+        padding: 0;
+        border: none;
+    }
+    .main_navigation ul{
+        /* font-size: ; */
+        text-align: center;
+        font-size: 100%;
+        overflow: hidden;
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+    .main_navigation ul.open{
+        height: auto;
+    }
+    .main_navigation ul li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    .main_navigation ul li a{
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 0;
+    }
+    #wrapper a{   
+        font-size: 3em;
+    }
+    #content p{
+        font-size: 3em;
+    }
+    /* .main_navigation li{
+        padding: 10px;
+    } */
+    #top_banner img{
+        position: relative;
+        height: 40%;
+    }
+    #cheese_info h2{
+        font-size: 700%;
+    }
+    #cheese_info h1{
+        font-size: 700%;
+    }
+    #main_product{
+        width: 80%;
+    }
+    #cheese_info span{
+        font-size: 700%;
+    }
+    #submission_form{
+        font-size: 225%;        
+    }
+    #submission_form legend{
+        font-size: 225%;        
+    }
+    #submission_form h1{
+        font-size: 225%;        
+    }
+    #submission_form input{
+        font-size: 150%; 
+        text-align: center;       
+
+    }
+    input[type="radio"] {
+        margin: 6px 6px 0px 10px;
+        border: 0px;
+        height: 7%;
+        width: 7%;
+    }
+    input[type="checkbox"] {
+        margin: 6px 6px 0px 10px;
+        border: 0px;
+        height: 7%;
+        width: 7%;
+    }
+    #comments{
+        font-size: 225%;
+    }
+    #comments h1{
+        font-size: 225%;
+    }
+    #comments input{
+        font-size: 200%;
+    }
+    #comments textarea{
+        font-size: 175%;
+    }
+    #content.open{
+        max-height: fit-content;
+        -webkit-transition: max-height 0.7s;
+        -moz-transition: max-height 0.7s;
+        transition: max-height 0.7s;
+    }    
+
+}

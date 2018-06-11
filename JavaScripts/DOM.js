@@ -176,7 +176,7 @@ function change_navigation(index){
     }
 
 }
-change_navigation(0);
+// change_navigation(0);
 // more definite and in depth events
 function onclick_event(){
     var check_event = document.getElementById("wrapper").getElementsByTagName("a");
@@ -185,7 +185,7 @@ function onclick_event(){
         alert("YOU FOUND ME!!!!")
     };
 }
-onclick_event();
+// onclick_event();
 
 function onclick_seeMore() {
     var content = document.getElementById("content");
@@ -327,8 +327,9 @@ personal_details.onsubmit = function(){
 var input_comments = document.getElementById("inputComments");
 var output_comments = [document.getElementById("outputComments")];
 var warning1 = document.getElementById("warning1");
-var text = [];
+var text = new Array();
 var index = 0;
+var StoredVarName = 'comment'
 console.log(output_comments);
 function input_Comments(){
     if (input_comments.value ==""){
@@ -337,20 +338,15 @@ function input_Comments(){
     } else {
         warning1.innerHTML = "";
     }
-    for (index = 0; index <= text.length; index++) {
-        text[index] = 'comment' + index;
-        if(window.localStorage.getItem(text[index]) == " "){
-            break;
-        }
-    }
-    window.localStorage.setItem(text[index], input_comments.value);
-    // output_comments[0].value = window.localStorage.getItem(text[0]);
+    
+    window.localStorage.setItem(StoredVarName, input_comments.value);
+    output_comments[0].value = window.localStorage.getItem(StoredVarName);
     // remove_comment(text[0]);
     // console.log(input_comments);
     // output_comments.innerHTML = window.localStorage.getItem('text');
+    remove_comment();
 };
 
-function remove_comment(text){
+function remove_comment(){
    document.getElementById("inputComments").value = '';
-   window.localStorage.removeItem(text);
 }

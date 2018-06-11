@@ -2,142 +2,146 @@
     *   Author : Cheserae Bidgood(Beukes)
     *   Date : 30/05/2018  
     ***********************************************************/ -->
-    <html>
+<html>
 
-        <head lang="en">
-            <meta charset="UTF-8" />
-            <title>Cheese Lovers</title>
-            <link rel="stylesheet" href="CSS/MasterStyle.css">
-        </head>
-        
-        <body>
-        
-            <div id="Hello"></div>
-            <div id="wrapper">
-                <nav class="main_navigation">
-                    <ul id="navigation">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Main Menu</a>
-                        </li>
-                        <li>
-                            <a href="#">More like this</a>
-                        </li>
-                        <li>
-                            <a href="#">About cheeze</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact cheeze</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div id="top_banner">
-                    <img src="Images/big_cheese_banner_logo.png" alt="big cheese logo">
-                </div>
-                <section id="cheese_info">
-                    <h2 id="product_info">Nachos and CHEEZE!!!</h2>
-                    <img id="main_product" src="Images/giphy.gif" alt="nachos and cheese">
-                    <h2 id="product_info">Choose the perfect price</h2>
-                    <div>
-                        <span onclick="DOMchange1()">R50.00</span>
-                    </div>
-                    <br>
-                    <h2 id="product_info">Here is a little story to read</h2>
-                    <div id="content">
-                        <p>
-                            Once upon a time . . . there lived a giant who had quarrelled with a very greedy wizard over sharing a treasure. After the
-                            quarrel, the giant said menacingly to the wizard: "I could crush you under my thumb if I wanted to! Now,
-                            get out of my sight!" The wizard hurried away, but from a safe distance, he hurled his terrible revenge.
-                        </p>
-                        <br>
-                        <p>
-                            "Abracadabra! Here I cast this spell! May the son, your wife will shortly give you, never grow any taller than my own thumb!"
-                            After Tom Thumb was born, his parents were at their wits' end. They could never find him, for they could
-                            barely see him. They had to speak in whispers for fear of deafening the little boy. Tom Thumb preferred
-                            playing with the little garden creatures, to the company of parents so different from himself. He rode
-                            piggyback on the snail and danced with the ladybirds. Tiny as he was, he had great fun in the world of
-                            little things.
-                        </p>
-                        <br>
-                        <p>
-                            But one unlucky day, he went to visit a froggy friend. No sooner had he scrambled onto a leaf than a large pike swallowed
-                            him up. But the pike too was fated to come to a very bad end. A little later, he took the bait cast by
-                            one of the King's fishermen, and before long, found himself under the cook's knife in the royal kitchens.
-                            And great was everyone's surprise when, out of the fish's stomach, stepped Tom Thumb, quite alive and
-                            little the worse for his adventure.
-                        </p>
-                    </div>
-                    <a id="more" onclick="onclick_seeMore()">show more</a>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div id="color">
-                        <a href="#">Add to order</a>
-                        <a href="https://www.youtube.com/watch?v=B9OZkATMbag">
-                            click here to learn some css tips and tricks</a>
-                        <a href="https://www.youtube.com/watch?v=Az5J_EkhYCY&t=7s" target="_blank">
-                            Click here to continue your java training</a>
-                        <br>
-                        <h1>More advance Tutorials</h1>
-                        <br>
-                        <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists?sort=dd&view=1&flow=grid" target="_blank">
-                            Click here for more NetNinja tutorials</a>
-                    </div>
-                    <form id="submission_form" name="submissionForm">
-                        <legend>Personal Information</legend>
-                        <h1>Fill out the form below</h1>
-                        <!-- First Name: -->
-                        <!-- <label for="FirstName">FirstName</label> -->
-                        <input type="text" name="FirstName" placeholder="First Name">
-                        <!-- Last Name: -->
-                        <input type="text" name="LastName" placeholder="Last Name">
-                        <br> Gender:
-                        <br>
-                        <input type="radio" name="Male" value="Male">Male
-                        <br>
-                        <input type="radio" name="Female" value="Female">Female
-                        <br>
-                        <input type="radio" name="Other" value="Other">Other
-                        <br>
-                        <h1>Do You like?:</h1>
-                        <input type="checkbox" name="food" id="food">Good Food
-                        <br>
-                        <input type="checkbox" name="music" id="music">Good Music
-                        <br>
-                        <input type="checkbox" name="movies" id="movies">Good Movies
-                        <br>
-                        <br>
-                        <input type="submit" value="Submit" name="submit">
-                        <br>
-                        <div id="warning"></div>
-                    </form>
-                    <form id="comments">
-                        <h1>Any Comments?: </h1>
-                        <br>
-                        <textarea name="Comments" id="inputComments" cols="30" rows="10"></textarea>
-                        <!-- <input type="text" id="inputComments" name="Comments"> -->
-                        <br>
-                        <input type="button" value="Add Comment" onclick="input_Comments()">
-                        <div id="warning1"></div>
-                        <!-- <output name=Comments1 id="outputComments"></output> -->
-                        <textarea name="Comments" id="outputComments" cols="30" rows="10"></textarea>
-                        <br>
-                    </form>
-                </section>
-                <footer id="footer_banner">
-                    <img src="Images/Multicheese.jpg" alt="Multiple plavors of cheese">
-                </footer>
-        
+<head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <!-- Above meta tag works nice with mobile devices -->
+    <title>Cheese Lovers</title>
+    <link rel="stylesheet" href="CSS/MasterStyle.css">
+</head>
+
+<body>
+
+    <div id="Hello"></div>
+    <div id="wrapper">
+        <div id="top_banner">
+            <img src="Images/big_cheese_banner_logo.png" alt="big cheese logo">
+        </div>
+        <a class="cheeze_nav"></a>
+        <nav class="main_navigation">
+            <ul id="navigation">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Main Menu</a>
+                </li>
+                <li>
+                    <a href="#">More like this</a>
+                </li>
+                <li>
+                    <a href="#">About cheeze</a>
+                </li>
+                <li>
+                    <a href="#">Contact cheeze</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="cheese_info">
+            <h2 id="product_info">Nachos and CHEEZE!!!</h2>
+            <img id="main_product" src="Images/giphy.gif" alt="nachos and cheese">
+            <h2 id="product_info">Choose the perfect price</h2>
+            <div>
+                <span onclick="DOMchange1()">R50.00</span>
             </div>
-            <!--Below is a javascrpit library  -->
-            <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-                crossorigin="anonymous"></script> -->
-            <!--  -->
-            <script src="JavaScripts/DOM.js"></script>
-        </body>
-        
-        </html>
+            <br>
+            <h2 id="product_info">Here is a little story to read</h2>
+            <div id="content">
+                <p>
+                    Once upon a time . . . there lived a giant who had quarrelled with a very greedy wizard over sharing a treasure. After the
+                    quarrel, the giant said menacingly to the wizard: "I could crush you under my thumb if I wanted to! Now,
+                    get out of my sight!" The wizard hurried away, but from a safe distance, he hurled his terrible revenge.
+                </p>
+                <br>
+                <p>
+                    "Abracadabra! Here I cast this spell! May the son, your wife will shortly give you, never grow any taller than my own thumb!"
+                    After Tom Thumb was born, his parents were at their wits' end. They could never find him, for they could
+                    barely see him. They had to speak in whispers for fear of deafening the little boy. Tom Thumb preferred
+                    playing with the little garden creatures, to the company of parents so different from himself. He rode
+                    piggyback on the snail and danced with the ladybirds. Tiny as he was, he had great fun in the world of
+                    little things.
+                </p>
+                <br>
+                <p>
+                    But one unlucky day, he went to visit a froggy friend. No sooner had he scrambled onto a leaf than a large pike swallowed
+                    him up. But the pike too was fated to come to a very bad end. A little later, he took the bait cast by
+                    one of the King's fishermen, and before long, found himself under the cook's knife in the royal kitchens.
+                    And great was everyone's surprise when, out of the fish's stomach, stepped Tom Thumb, quite alive and
+                    little the worse for his adventure.
+                </p>
+            </div>
+            <a id="more" onclick="onclick_seeMore()">show more</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="color">
+                <a href="#">Add to order</a>
+                <a href="https://www.youtube.com/watch?v=B9OZkATMbag">
+                    click here to learn some css tips and tricks</a>
+                <a href="https://www.youtube.com/watch?v=Az5J_EkhYCY&t=7s" target="_blank">
+                    Click here to continue your java training</a>
+                <br>
+                <h1>More advance Tutorials</h1>
+                <br>
+                <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists?sort=dd&view=1&flow=grid" target="_blank">
+                    Click here for more NetNinja tutorials</a>
+            </div>
+            <form id="submission_form" name="submissionForm">
+                <legend>Personal Information</legend>
+                <h1>Fill out the form below</h1>
+                <!-- First Name: -->
+                <!-- <label for="FirstName">FirstName</label> -->
+                <input type="text" name="FirstName" placeholder="First Name">
+                <br>
+                <!-- Last Name: -->
+                <input type="text" name="LastName" placeholder="Last Name">
+                <br>Gender:
+                <br>
+                <input type="radio" name="Male" value="Male">Male
+                <br>
+                <input type="radio" name="Female" value="Female">Female
+                <br>
+                <input type="radio" name="Other" value="Other">Other
+                <br>
+                <h1>Do You like?:</h1>
+                <input type="checkbox" name="food" id="food">Good Food
+                <br>
+                <input type="checkbox" name="music" id="music">Good Music
+                <br>
+                <input type="checkbox" name="movies" id="movies">Good Movies
+                <br>
+                <br>
+                <input type="submit" value="Submit" name="submit">
+                <br>
+                <div id="warning"></div>
+            </form>
+            <form id="comments">
+                <h1>Any Comments?: </h1>
+                <br>
+                <textarea name="Comments" id="inputComments" cols="30" rows="10"></textarea>
+                <!-- <input type="text" id="inputComments" name="Comments"> -->
+                <br>
+                <input type="button" value="Add Comment" onclick="input_Comments()">
+                <div id="warning1"></div>
+                <!-- <output name=Comments1 id="outputComments"></output> -->
+                <textarea name="Comments" id="outputComments" cols="30" rows="10"></textarea>
+                <br>
+            </form>
+        </section>
+        <footer id="footer_banner">
+            <img src="Images/Multicheese.jpg" alt="Multiple plavors of cheese">
+        </footer>
+
+    </div>
+    <!--Below is a javascrpit library  -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--  -->
+    <script src="JavaScripts/navigation_menu.js"></script>
+    <script src="JavaScripts/DOM.js"></script>
+</body>
+
+</html>
